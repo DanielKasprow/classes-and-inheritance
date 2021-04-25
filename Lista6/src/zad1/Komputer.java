@@ -1,11 +1,10 @@
 package zad1;
 
-public class Konsola extends Urz¹dzenie implements DlaKonsoli{
+public class Komputer extends Urz¹dzenie implements DlaKomputera{
 	
 	int rok;
-	String kolor;
 	String nazwa;
-	int sprzedaz;
+	String producent;
 	
 	@Override
 	public int rokProdukcji() {
@@ -16,23 +15,21 @@ public class Konsola extends Urz¹dzenie implements DlaKonsoli{
 		return nazwa;
 	}
 	
-	public Konsola(int rok, String kolor,String nazwa,int sprzedaz)
+	public Komputer(int rok, String nazwa,String producent)
 	{
 		this.rok = rok;
-		this.kolor = kolor;
 		this.nazwa = nazwa;
-		this.sprzedaz = sprzedaz;
+		this.producent = producent;
 	}
 	
 	public void Info() 
 	{
 		System.out.println("Urzadzenie: " + nazwa);
 		System.out.println("rok produkcji: " + rok);
-		System.out.println("kolor: " + kolor);
 	}
 	@Override
-	public int sprzedaz() {
+	public String producent() {
 		// TODO Auto-generated method stub
-		return sprzedaz;
+		return producent;
 	}
 }

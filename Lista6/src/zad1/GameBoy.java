@@ -1,11 +1,11 @@
 package zad1;
 
-public class DreamCast extends Konsola {
+public class GameBoy extends Konsola{
 	
 	int iloscGier;
 	int poborPradu;
 	
-	public DreamCast(int rok, String kolor,String nazwa,int sprzedaz, int iloscGier, int poborPradu)
+	public GameBoy(int rok, String kolor,String nazwa,int sprzedaz, int iloscGier, int poborPradu)
 	{
 		super(rok, kolor,nazwa,sprzedaz);
 		this.iloscGier = iloscGier;
